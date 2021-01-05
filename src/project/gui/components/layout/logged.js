@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 import { connect } from 'react-redux';
+import React from 'react';
 
 import Header from './logged/header.js'
 import Menu from './logged/menu.js'

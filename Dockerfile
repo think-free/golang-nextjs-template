@@ -16,9 +16,6 @@ RUN cd /src && mv scripts/* ./ && chmod +x *.sh && ./build-go.sh
 FROM alpine
 WORKDIR /app
 COPY --from=go-env /src/project /app/
-RUN apk update && apk add docker git curl py-pip
-RUN pip install 'docker-compose'
-RUN docker-compose version
 
 EXPOSE 8123
-ENTRYPOINT ./project
+ENTRYPOINT /app/project

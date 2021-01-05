@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
+import React from 'react';
 
 class Login extends React.Component {
 

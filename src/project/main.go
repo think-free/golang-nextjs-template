@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 	"log"
-	"os"
 
 	"project/webserver"
 
@@ -20,7 +19,6 @@ func main() {
 	db, err := storm.Open("/etc/project/project.db")
 	if err != nil {
 		log.Println("Can't open database")
-		os.Exit(1)
 	}
 
 	/* Webserver */

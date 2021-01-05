@@ -2,7 +2,7 @@ import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 import { createStore } from 'redux'
 import { Provider }  from 'react-redux'
-
+import React from 'react';
 import Store from '../components/redux/store.js'
 import { setValue } from '../components/redux/store.js'
 import Login from '../components/layout/login.js'
